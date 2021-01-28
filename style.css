@@ -1,5 +1,14 @@
-/* CSS files add styling rules to your content */
+/* Basic Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* End of Reset */
 
+/* Forked Default */
 body {
   font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
   margin: 2em;
@@ -9,3 +18,86 @@ h1 {
   font-style: italic;
   color: #373fff;
 }
+/* End of Forked Default */
+
+/* Table Container */
+.table-container {
+  max-width: 1461px;
+  overflow-x: auto;
+  margin: 0 auto;
+}
+/* End of Table Container */
+
+/*------------------------ Table ------------------------*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: auto;
+  width: 100%;
+}
+
+caption {
+  font-family: "Rock Salt", cursive;
+  color: grey;
+  caption-side: bottom;
+  text-align: right;
+  padding: 10px;
+}
+
+/* Groupable */
+thead,
+tfoot {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)),
+    url("./assets/leopardskin.jpg");
+  color: white;
+}
+
+thead th,
+tfoot th {
+  font-family: "Rock Salt", cursive;
+  font-weight: 700;
+}
+
+thead th,
+thead td,
+tfoot th,
+tfoot td {
+  padding: 1.5rem;
+  border: 2px solid #800080;
+}
+/* End of Groupable */
+
+/* Table Body */
+tbody {
+  background-image: url("./assets/noise.png");
+  border: 2px solid #800080;
+}
+
+tbody tr {
+  background-color: #ff33cc;
+  text-align: center;
+}
+
+tbody tr:nth-of-type(2n) {
+  background-color: #e495e4;
+}
+
+tbody th,
+tbody td {
+  padding: 1rem;
+  font-family: "Helvetica Neue", inherit;
+}
+/* End of Table Body */
+
+/* Table Footer */
+tfoot th,
+tfoot td {
+  width: 50%;
+}
+
+tfoot th {
+  text-align: right;
+}
+/* End of Table Footer */
+
+/*--------------------- End of Table --------------------*/
